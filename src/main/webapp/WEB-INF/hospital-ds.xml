@@ -1,0 +1,12 @@
+<!-- File must end with -ds.xml, otherwise jBoss will fail running the artifact -->
+
+<datasources>
+    <datasource jndi-name="HospitalDataSource" pool-name="HospitalDataSource">
+        <driver>h2</driver>
+        <connection-url>jdbc:h2:~/h2database/HospitalDB;AUTO_SERVER=TRUE</connection-url>
+        <security>
+            <user-name>admin</user-name>
+            <password>admin</password>
+        </security>
+    </datasource>
+</datasources>

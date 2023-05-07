@@ -34,4 +34,6 @@ public class Patient {
     @JoinTable(name = "AssignedPatients")
     private List<Specialist> specialists = new ArrayList<>();
 
+    @Version
+    private int version;
 }

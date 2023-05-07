@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="HospitalDB" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="org.h2.Driver"
+                        connectionURL="jdbc:h2:~/h2database/HospitalDB;AUTO_SERVER=TRUE"
+                        userId="admin"
+                        password="admin">
+        </jdbcConnection>
+
+        <!-- Explanation of targetProject="MAVEN": https://mybatis.org/generator/running/runningWithMaven.html#interpretation-of-targetproject-->
+        <javaModelGenerator targetPackage="com.example.hospital.mybatis.model" targetProject="MAVEN" >
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="com.example.hospital.mybatis.xml"  targetProject="MAVEN"/>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.hospital.mybatis.dao"  targetProject="MAVEN"/>
+
+        <table tableName="Department">
+            <generatedKey column="Id" sqlStatement="JDBC" identity="true" />
+            <ignoreColumn column="Version" />
+        </table>
+
+        <table tableName="Specialist">
+            <generatedKey column="Id" sqlStatement="JDBC" identity="true" />
+            <ignoreColumn column="Version" />
+        </table>
+
+        <table tableName="Patient">
+            <generatedKey column="Id" sqlStatement="JDBC" identity="true" />
+            <ignoreColumn column="Version" />
+        </table>
+
+        <!-- If names are omitted, the auto-generated name is a mess -->
+        <table tableName="AssignedPatients" mapperName="AssignedPatientsMapper" domainObjectName="AssignedPatients"/>
+    </context>
+</generatorConfiguration>

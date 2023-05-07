@@ -9,7 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd3e19a-a545-4c57-ba70-6eae4606b15f" name="Changes" comment="Add additional dependencies and setup h2 connection." />
+    <list default="true" id="dcd3e19a-a545-4c57-ba70-6eae4606b15f" name="Changes" comment="Add additional dependencies and setup h2 connection.">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/AssignedPatientsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/DepartmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/PatientMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/SpecialistMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatients.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatientsExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/DepartmentExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/PatientExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Specialist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/SpecialistExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/AssignedPatientsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/PatientMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/SpecialistMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/entities/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/entities/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/generatorConfig.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +59,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2PTNwHiVFhNELQOyUYhACu9SZYc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,20 +75,39 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/cat/Documents/Software Development/hospital/src/main/resources/META-INF/mybatis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "inlay.hints",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "h2"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "H2"
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF/mybatis" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mybatis/xml" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/hospital" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="JBoss/WildFly 27.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 27.0.1.Final" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/hospital-1.0-SNAPSHOT" />
@@ -127,7 +172,8 @@
       <option name="presentableId" value="Default" />
       <updated>1683477350314</updated>
       <workItem from="1683477351328" duration="3020000" />
-      <workItem from="1683480400031" duration="9644000" />
+      <workItem from="1683480400031" duration="13337000" />
+      <workItem from="1683496284858" duration="1549000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional dependencies and setup h2 connection.">
       <created>1683486287690</created>
@@ -143,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683492529120</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add additional dependencies and setup h2 connection.">
+      <created>1683492558877</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683492558877</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

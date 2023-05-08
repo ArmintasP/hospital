@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+    <head>
+        <title>Hospital - #{specialistsByDepartment.department.name}</title>
+    </head>
+</h:head>
+
+<h:body>
+    <h2>#{specialistsByDepartment.department.name} specialists:</h2>
+    <ol>
+        <ui:repeat value="#{specialistsByDepartment.department.specialists}" var="specialist">
+            <li>
+                <h:link value="#{specialist.fullName} - #{specialist.speciality}"
+                        outcome="specialist?specialistId=#{specialist.id}"/>
+            </li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        Full name:
+        <h:inputText a:placeholder="John Hasnerburg"
+                     value="#{specialistsByDepartment.newSpecialist.fullName}"
+                     required="true"/>
+        Specialist's country code (2 letters):
+        <h:inputText a:placeholder="#{specialistsByDepartment.defaultCountryCode}"
+                     value="#{specialistsByDepartment.newSpecialist.countryCode}"
+                     required="true"/>
+        National ID:
+        <h:inputText value="#{specialistsByDepartment.newSpecialist.nationalId}"
+                     required="true"/>
+        Specialty:
+        <h:selectOneMenu value="#{specialistsByDepartment.newSpecialist.speciality}">
+            <f:selectItems value="#{specialistsByDepartment.specialities}"/>
+        </h:selectOneMenu>
+
+        <h:commandButton value="Add new specialist to the department"
+                         actionListener="#{specialistsByDepartment.createSpecialist}"
+                         action="#{'specialists?faces-redirect=true&amp;departmentId='.concat(specialistsByDepartment.department.id)}">
+            <f:param name="departmentId" value="#{specialistsByDepartment.department.id}"/>
+        </h:commandButton>
+    </h:form>
+<!--    <h:link outcome="index" value="Go back to Departments list"/>-->
+</h:body>
+
+
+</html>

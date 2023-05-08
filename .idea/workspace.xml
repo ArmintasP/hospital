@@ -9,40 +9,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd3e19a-a545-4c57-ba70-6eae4606b15f" name="Changes" comment="Add additional dependencies and setup h2 connection.">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/AssignedPatientsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/DepartmentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/PatientMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/SpecialistMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatientsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/DepartmentExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/PatientExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Specialist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/SpecialistExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/AssignedPatientsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/DepartmentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/PatientMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/SpecialistMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+    <list default="true" id="dcd3e19a-a545-4c57-ba70-6eae4606b15f" name="Changes" comment="Regenerate MyBatis files based on new fields.">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/AntrasKomponentas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/PirmasKomponentas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/interceptors/LoggedInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/interceptors/MethodLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/persistence/DepartmentsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/persistence/JpaResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/persistence/MyBatisResurces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/persistence/SpecialistsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/usecases/jpa/Departments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/usecases/jpa/Specialists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/usecases/jpa/SpecialistsByDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/specialists.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/entities/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/entities/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/entities/Specialist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/entities/Specialist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/entities/common/Specialty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/entities/common/Speciality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/AssignedPatientsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/AssignedPatientsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/PatientMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/SpecialistMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/SpecialistMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatientsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatientsExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/DepartmentExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/DepartmentExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/PatientExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/PatientExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Specialist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Specialist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/SpecialistExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/SpecialistExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/AssignedPatientsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/AssignedPatientsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/PatientMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/PatientMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/SpecialistMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/SpecialistMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="jsf" />
         <option value="Enum" />
+        <option value="HTML File" />
+        <option value="cdi.beans_3_0" />
+        <option value="jsf" />
         <option value="Class" />
       </list>
     </option>
@@ -70,21 +95,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/cat/Documents/Software Development/hospital/src/main/resources/META-INF/mybatis",
+    "last_opened_file_path": "/home/cat/Documents/Software Development/hospital/src/main/java/com/example/hospital",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "inlay.hints",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -98,14 +124,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/META-INF/mybatis" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mybatis/xml" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/hospital" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF/mybatis" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mybatis/xml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.hospital.usecases.jpa" />
     </key>
   </component>
   <component name="RunManager">
@@ -125,6 +156,24 @@
         <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="46087" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -173,7 +222,8 @@
       <updated>1683477350314</updated>
       <workItem from="1683477351328" duration="3020000" />
       <workItem from="1683480400031" duration="13337000" />
-      <workItem from="1683496284858" duration="1549000" />
+      <workItem from="1683496284858" duration="15197000" />
+      <workItem from="1683513701115" duration="2159000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional dependencies and setup h2 connection.">
       <created>1683486287690</created>
@@ -196,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683492558877</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add MyBatis generatorConfig.xml and generated files.">
+      <created>1683497919638</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683497919638</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Regenerate MyBatis files based on new fields.">
+      <created>1683504208356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683504208356</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +268,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add additional dependencies and setup h2 connection." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add additional dependencies and setup h2 connection." />
+    <MESSAGE value="Add MyBatis generatorConfig.xml and generated files." />
+    <MESSAGE value="Regenerate MyBatis files based on new fields." />
+    <option name="LAST_COMMIT_MESSAGE" value="Regenerate MyBatis files based on new fields." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/hospital/usecases/jpa/Departments.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -15,9 +15,9 @@ import java.util.List;
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
-    private int floor;
+    private Integer floor;
 
     @Column(nullable = false, unique = true)
     @Size(min = 1, max = 60)
@@ -27,5 +27,5 @@ public class Department {
     private List<Specialist> specialists = new ArrayList<>();
 
     @Version
-    private int version;
+    private Integer version;
 }

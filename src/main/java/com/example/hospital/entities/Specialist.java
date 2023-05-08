@@ -18,7 +18,7 @@ import java.util.List;
 public class Specialist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Integer id;
 
     @Column(nullable = false)
     @Size(min = 2, max = 2)
@@ -35,11 +35,12 @@ public class Specialist {
     @JoinColumn(name = "DepartmentId")
     private Department department;
 
+    @Enumerated(EnumType.STRING)
     private Specialty specialty;
 
     @ManyToMany(mappedBy = "specialists")
     private List<Patient> patients = new ArrayList<>();
 
     @Version
-    private int version;
+    private Integer version;
 }

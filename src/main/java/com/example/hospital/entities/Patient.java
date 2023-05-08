@@ -17,7 +17,7 @@ import java.util.List;
 public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Integer id;
 
     @Column(nullable = false)
     @Size(min = 2, max = 2)
@@ -35,5 +35,5 @@ public class Patient {
     private List<Specialist> specialists = new ArrayList<>();
 
     @Version
-    private int version;
+    private Integer version;
 }

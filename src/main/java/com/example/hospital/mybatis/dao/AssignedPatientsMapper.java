@@ -4,8 +4,8 @@ import com.example.hospital.mybatis.model.AssignedPatients;
 import com.example.hospital.mybatis.model.AssignedPatientsExample;
 import java.util.List;
 
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.mybatis.cdi.Mapper;
 
 @Mapper
 public interface AssignedPatientsMapper {

@@ -10,7 +10,7 @@ import jakarta.persistence.EntityManager;
 import java.io.Serializable;
 import java.util.List;
 
-@RequestScoped
+@ApplicationScoped
 public class SpecialistsDAO implements Serializable {
 
     @Inject

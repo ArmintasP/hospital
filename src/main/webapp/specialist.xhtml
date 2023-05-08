@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+    <head>
+        <title>Hospital - #{patientsBySpecialist.specialist.fullName}</title>
+    </head>
+</h:head>
+
+<h:body>
+    <h2>#{patientsBySpecialist.specialist.fullName}:</h2>
+
+    <h3>Specializes in #{patientsBySpecialist.specialist.speciality}</h3>
+
+    <h3>Currently has been assigned to take a look at the following patients:</h3>
+    <ol>
+        <ui:repeat value="#{patientsBySpecialist.specialist.patients}" var="patient">
+            <li>
+                <p>#{patient.fullName}</p>
+            </li>
+        </ui:repeat>
+    </ol>
+
+    <h4>Assign new patient to this doctor</h4>
+
+    <h:panelGroup rendered="#{!validateReason.valid}">
+
+        <h:form>
+            <h:inputTextarea value="#{validateReason.reason}" required="true"/>
+            <h:commandButton value="Check your reason"
+                             actionListener="#{validateReason.runValidation(patientsBySpecialist.specialist)}"
+                             action="#{'specialist?faces-redirect=true&amp;specialistId='.concat(patientsBySpecialist.specialist.id)}">
+                <f:param name="specialistId" value="#{patientsBySpecialist.specialist.id}"/>
+            </h:commandButton>
+        </h:form>
+
+    </h:panelGroup>
+
+    <h:panelGroup rendered="#{validateReason.valid}">
+        <h:form>
+            Full name:
+            <h:inputText a:placeholder="Patient name"
+                         value="#{patientsBySpecialist.newPatient.fullName}"
+                         required="true"/><br/>
+            Patient's country code (2 letters):
+            <h:inputText a:placeholder="#{patientsBySpecialist.defaultCountryCode}"
+                         value="#{patientsBySpecialist.newPatient.countryCode}"
+                         required="true"/><br/>
+            National ID:
+            <h:inputText value="#{patientsBySpecialist.newPatient.nationalId}"
+                         required="true"/><br/>
+
+            <h:commandButton value="Add new specialist to the department"
+                             disabled="#{!validateReason.valid}"
+                             actionListener="#{patientsBySpecialist.assignToSpecialist()}"
+                             action="#{'specialist?faces-redirect=false&amp;specialistId='.concat(patientsBySpecialist.specialist.id)}">
+                <f:param name="specialistId" value="#{patientsBySpecialist.specialist.id}"/>
+                <f:actionListener binding="#{validateReason.endConversation()}"/>
+            </h:commandButton><br/>
+        </h:form>
+
+    </h:panelGroup>
+
+    <h:link outcome="index" value="Go back to Departments list"/>
+</h:body>
+
+</html>

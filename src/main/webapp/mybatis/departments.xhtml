@@ -8,22 +8,22 @@
 
 <h:head>
     <head>
-        <title>Hospital - Home</title>
+        <title>Hospital - MyBatis</title>
     </head>
 </h:head>
 
 <h:body>
     <h3>Departments:</h3>
     <ol>
-        <ui:repeat value="#{departments.departments}" var="department">
+        <ui:repeat value="#{departmentsMyBatis.departments}" var="department">
             <li><h:link value="#{department.name}, Floor #{department.floor}"
                         outcome="specialists?departmentId=#{department.id}"/></li>
         </ui:repeat>
     </ol>
     <h:form>
-        Name: <h:inputText value="#{departments.newDepartment.name}" required="true"/><br/>
-        Floor: <h:inputText value="#{departments.newDepartment.floor}" required="true"/><br/>
-        <h:commandButton value="Add new department" actionListener="#{departments.createDepartment}"
+        Name: <h:inputText value="#{departmentsMyBatis.newDepartment.name}" required="true"/><br/>
+        Floor: <h:inputText value="#{departmentsMyBatis.newDepartment.floor}" required="true"/><br/>
+        <h:commandButton value="Add new department" actionListener="#{departmentsMyBatis.create()}"
                          action="index?faces-redirect=true"/>
     </h:form>
 

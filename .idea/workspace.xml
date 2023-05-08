@@ -10,29 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd3e19a-a545-4c57-ba70-6eae4606b15f" name="Changes" comment="Add first sample xhtml.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/persistence/PatientsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/services/ReasonValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/usecases/ValidateReason.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/usecases/jpa/PatientsBySpecialist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/usecases/myBatis/DepartmentsMyBatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/mybatis/departments.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/specialist.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/xml/AssignedPatientsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/xml/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/xml/PatientMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/xml/SpecialistMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/AssignedPatientsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/AssignedPatientsMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/DepartmentMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/PatientMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/SpecialistMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/dao/SpecialistMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/persistence/MyBatisResurces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/persistence/MyBatisResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/persistence/SpecialistsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/persistence/SpecialistsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/usecases/jpa/Specialists.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/AssignedPatientsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml/AssignedPatientsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml/DepartmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/PatientMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml/PatientMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml/SpecialistMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml/SpecialistMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/specialists.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/specialists.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/AssignedPatientsExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/DepartmentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/PatientExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Specialist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/Specialist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis/model/SpecialistExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/AssignedPatientsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/DepartmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/PatientMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/SpecialistMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/cat/Documents/Software Development/hospital/src/main/webapp/WEB-INF",
+    "last_opened_file_path": "/home/cat/Documents/Software Development/hospital/src/main/resources/mybatis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,11 +105,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mybatis" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/hospital/mybatis" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/hospital" />
-      <recent name="$PROJECT_DIR$/src/main/resources/META-INF/mybatis" />
-      <recent name="$PROJECT_DIR$/src/main/resources/META-INF/mybatis/xml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -207,7 +205,7 @@
       <workItem from="1683480400031" duration="13337000" />
       <workItem from="1683496284858" duration="15197000" />
       <workItem from="1683513701115" duration="4857000" />
-      <workItem from="1683542458636" duration="14978000" />
+      <workItem from="1683542458636" duration="15524000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional dependencies and setup h2 connection.">
       <created>1683486287690</created>
@@ -258,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683516159978</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add first sample xhtml.">
+      <created>1683557962817</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683557962817</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

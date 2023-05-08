@@ -1,6 +1,6 @@
 package com.example.hospital.entities;
 
-import com.example.hospital.entities.common.Specialty;
+import com.example.hospital.entities.common.Speciality;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.EqualsAndHashCode;
@@ -36,7 +36,7 @@ public class Specialist {
     private Department department;
 
     @Enumerated(EnumType.STRING)
-    private Specialty specialty;
+    private Speciality speciality;
 
     @ManyToMany(mappedBy = "specialists")
     private List<Patient> patients = new ArrayList<>();

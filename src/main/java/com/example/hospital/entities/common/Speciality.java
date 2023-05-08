@@ -1,6 +1,6 @@
 package com.example.hospital.entities.common;
 
-public enum Specialty {
+public enum Speciality {
     FAMILY_MEDICINE,
     EMERGENCY_MEDICINE,
     PATHOLOGY,

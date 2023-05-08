@@ -20,10 +20,8 @@ public class DepartmentsDAO implements Serializable {
 
     public List<Department> getAll() {
         return em.createQuery(
-            """
-                SELECT D
-                FROM Department AS D
-            """,
+                        "    SELECT D\n" +
+                        "    FROM Department AS D\n",
             Department.class)
             .getResultList();
     }

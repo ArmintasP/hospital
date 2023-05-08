@@ -23,15 +23,13 @@ public class SpecialistsDAO implements Serializable {
 
     public List<Specialist> getByDepartment(String departmentName) {
         return em.createQuery(
-                 """
-                 SELECT S
-                 FROM
-                     Specialist AS S,
-                     Department AS D
-                 WHERE
-                     D.name LIKE :departmentName AND
-                     D.id = S.department.id
-                 """,
+                        "SELECT S\n" +
+                        "FROM\n" +
+                        "    Specialist AS S,\n" +
+                        "    Department AS D\n" +
+                        "WHERE\n" +
+                        "    D.name LIKE :departmentName AND\n" +
+                        "    D.id = S.department.id\n",
                 Specialist.class)
             .setParameter("departmentName", departmentName)
             .getResultList();

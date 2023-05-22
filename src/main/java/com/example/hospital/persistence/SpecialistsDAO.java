@@ -6,6 +6,7 @@ import jakarta.enterprise.context.RequestScoped;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.LockModeType;
 
 import java.io.Serializable;
 import java.util.List;
@@ -16,9 +17,14 @@ public class SpecialistsDAO implements Serializable {
     @Inject
     private EntityManager em;
 
+
+    public void flush(){
+        em.flush();
+    }
     public void persist(Specialist specialist) {
 
         this.em.persist(specialist);
+        flush();
     }
 
     public List<Specialist> getByDepartment(String departmentName) {
@@ -36,10 +42,13 @@ public class SpecialistsDAO implements Serializable {
     }
 
     public Specialist findOne(Integer id) {
-        return em.find(Specialist.class, id);
+        return em.find(Specialist.class, id);//, LockModeType.OPTIMISTIC);
     }
 
     public Specialist update(Specialist specialist) {
-        return em.merge(specialist);
+
+        var updatedSpecialist = em.merge(specialist);
+        flush();
+        return updatedSpecialist;
     }
 }

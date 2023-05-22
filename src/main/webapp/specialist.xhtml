@@ -14,6 +14,7 @@
 </h:head>
 
 <h:body>
+    #{pageInformerService.specialistMessage()}
     <h2>#{patientsBySpecialist.specialist.fullName}:</h2>
 
     <h3>Specializes in #{patientsBySpecialist.specialist.speciality}</h3>

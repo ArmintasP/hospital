@@ -8,5 +8,13 @@
         <class>com.example.hospital.interceptors.MethodLogger</class>
     </interceptors>
 
+    <decorators>
+        <class>
+            com.example.hospital.services.visits.PageVisitsInformerDecorator
+        </class>
+    </decorators>
 
+<!--    <alternatives>-->
+<!--        <class>com.example.hospital.services.visits.ComplexPageVisitsInformer</class>-->
+<!--    </alternatives>-->
 </beans>

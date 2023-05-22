@@ -17,6 +17,7 @@
     #{pageInformerService.specialistMessage()}
     <h2>#{patientsBySpecialist.specialist.fullName}:</h2>
 
+
     <h3>Specializes in #{patientsBySpecialist.specialist.speciality}</h3>
 
     <h3>Currently has been assigned to take a look at the following patients:</h3>
@@ -29,6 +30,16 @@
     </ol>
 
     <h4>Assign new patient to this doctor</h4>
+    <h:form>
+        <h:commandButton value="Get Doctor Status"
+                         actionListener="#{specialistStatus.askForStatus(patientsBySpecialist.specialist)}"
+                         disabled="#{specialistStatus.waitingForStatus}"
+                         action="#{'specialist?faces-redirect=true&amp;specialistId='.concat(patientsBySpecialist.specialist.id)}">
+            <f:param name="specialistId" value="#{patientsBySpecialist.specialist.id}"/>
+        </h:commandButton>
+        <h:outputText value="#{specialistStatus.status}" /> <br/>
+    </h:form>
+
 
     <h:panelGroup rendered="#{!validateReason.valid}">
 
